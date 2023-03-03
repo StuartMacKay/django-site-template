@@ -1,0 +1,13 @@
+Django
+celery
+django-celery-beat
+django-extensions
+django-spaceless-templates
+django-storages
+django-structlog[celery]
+ipython
+psycopg2-binary
+pymemcache
+python-dateutil
+sentry-sdk
+structlog-sentry

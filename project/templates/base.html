@@ -1,0 +1,48 @@
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="{% static 'favicon.ico' %}">
+  <title>{% block title %}{{ request.site.name }}{% endblock %}</title>
+
+  {% block css %}
+    <link href="{% static 'css/site.css' %}" rel="stylesheet">
+  {% endblock %}
+
+  {% block javascript %}
+  {% endblock %}
+</head>
+<body>
+  {% block header %}
+    <header>
+    </header>
+  {% endblock %}
+
+  {% block messages %}
+    <div>
+      {% for message in messages %}
+      {% endfor %}
+    </div>
+  {% endblock %}
+
+  {% block main %}
+    <main>
+    </main>
+  {% endblock %}
+
+  {% block footer %}
+    <footer>
+    </footer>
+  {% endblock %}
+
+  {% block extra_js %}
+    <script src="{% static 'js/index.js' %}"></script>
+  {% endblock %}
+
+</body>
+</html>

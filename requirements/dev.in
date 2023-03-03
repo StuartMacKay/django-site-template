@@ -1,0 +1,8 @@
+-r site.in
+-r tests.in
+
+bumpver
+colorama
+django-debug-toolbar
+django-stubs
+pip-upgrader

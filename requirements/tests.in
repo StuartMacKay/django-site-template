@@ -1,0 +1,12 @@
+-r site.in
+
+black
+flake8
+isort
+mypy
+
+pytest
+pytest-django
+pytest-factoryboy
+pytest-freezegun
+pytest-cov
