@@ -13,18 +13,16 @@ asgiref==3.6.0
 asttokens==2.2.1
     # via stack-data
 attrs==22.2.0
-    # via
-    #   pytest
-    #   pytest-mypy
+    # via pytest
 backcall==0.2.0
     # via ipython
 billiard==3.6.4.0
     # via celery
 black==23.1.0
-    # via pytest-black
+    # via -r tests.in
 celery==5.2.7
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   django-celery-beat
     #   django-structlog
 certifi==2022.12.7
@@ -48,38 +46,34 @@ decorator==5.1.1
     # via ipython
 django==4.1.7
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   django-celery-beat
     #   django-extensions
     #   django-spaceless-templates
     #   django-storages
     #   django-structlog
 django-celery-beat==2.4.0
-    # via -r requirements/site.in
+    # via -r site.in
 django-extensions==3.2.1
-    # via -r requirements/site.in
+    # via -r site.in
 django-ipware==4.0.2
     # via django-structlog
 django-spaceless-templates==1.0.2
-    # via -r requirements/site.in
+    # via -r site.in
 django-storages==1.13.2
-    # via -r requirements/site.in
+    # via -r site.in
 django-structlog[celery]==4.1.1
-    # via -r requirements/site.in
+    # via -r site.in
 django-timezone-field==5.0
     # via django-celery-beat
-exceptiongroup==1.1.0
-    # via pytest
 executing==1.2.0
     # via stack-data
 factory-boy==3.2.1
     # via pytest-factoryboy
 faker==17.4.0
     # via factory-boy
-filelock==3.9.0
-    # via pytest-mypy
 flake8==6.0.0
-    # via pytest-flake8
+    # via -r tests.in
 freezegun==1.2.2
     # via pytest-freezegun
 inflection==0.5.1
@@ -87,9 +81,9 @@ inflection==0.5.1
 iniconfig==2.0.0
     # via pytest
 ipython==8.11.0
-    # via -r requirements/site.in
+    # via -r site.in
 isort==5.12.0
-    # via pytest-isort
+    # via -r tests.in
 jedi==0.18.2
     # via ipython
 kombu==5.2.4
@@ -99,7 +93,7 @@ matplotlib-inline==0.1.6
 mccabe==0.7.0
     # via flake8
 mypy==1.0.1
-    # via pytest-mypy
+    # via -r tests.in
 mypy-extensions==1.0.0
     # via
     #   black
@@ -125,7 +119,7 @@ prompt-toolkit==3.0.38
     #   click-repl
     #   ipython
 psycopg2-binary==2.9.5
-    # via -r requirements/site.in
+    # via -r site.in
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2
@@ -137,39 +131,27 @@ pyflakes==3.0.1
 pygments==2.14.0
     # via ipython
 pymemcache==4.0.0
-    # via -r requirements/site.in
-pytest==7.2.1
+    # via -r site.in
+pytest==7.2.2
     # via
-    #   -r requirements/tests.in
-    #   pytest-black
+    #   -r tests.in
     #   pytest-cov
     #   pytest-django
     #   pytest-factoryboy
-    #   pytest-flake8
     #   pytest-freezegun
-    #   pytest-isort
-    #   pytest-mypy
-pytest-black==0.3.12
-    # via -r requirements/tests.in
 pytest-cov==4.0.0
-    # via -r requirements/tests.in
+    # via -r tests.in
 pytest-django==4.5.2
-    # via -r requirements/tests.in
+    # via -r tests.in
 pytest-factoryboy==2.5.1
-    # via -r requirements/tests.in
-pytest-flake8==1.1.1
-    # via -r requirements/tests.in
+    # via -r tests.in
 pytest-freezegun==0.4.2
-    # via -r requirements/tests.in
-pytest-isort==3.1.0
-    # via -r requirements/tests.in
-pytest-mypy==0.10.3
-    # via -r requirements/tests.in
+    # via -r tests.in
 python-crontab==2.7.1
     # via django-celery-beat
 python-dateutil==2.8.2
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   faker
     #   freezegun
     #   python-crontab
@@ -179,7 +161,7 @@ pytz==2022.7.1
     #   django-timezone-field
 sentry-sdk==1.16.0
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   structlog-sentry
 six==1.16.0
     # via
@@ -195,15 +177,7 @@ structlog==22.3.0
     #   django-structlog
     #   structlog-sentry
 structlog-sentry==2.0.0
-    # via -r requirements/site.in
-toml==0.10.2
-    # via pytest-black
-tomli==2.0.1
-    # via
-    #   black
-    #   coverage
-    #   mypy
-    #   pytest
+    # via -r site.in
 traitlets==5.9.0
     # via
     #   ipython
