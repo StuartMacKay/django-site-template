@@ -1,6 +1,6 @@
 # Django Site Template
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/cookiecutter/cookiecutter-django/ci.yml?branch=master)](https://github.com/cookiecutter/cookiecutter-django/actions/workflows/ci.yml?query=branch%3Amaster)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/StuartMacKay/django-site-template/ci.yml?branch=master)](https://github.com/StuartMacKay/django-site-template/actions/workflows/ci.yml?query=branch%3Amaster)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 Half the battle to create a successful project is getting everything organized.
