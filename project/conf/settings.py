@@ -38,11 +38,6 @@ CONF_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(CONF_DIR)
 ROOT_DIR = os.path.dirname(PROJECT_DIR)
 
-LOG_DIR = os.path.join(ROOT_DIR, "logs")
-
-if not os.path.exists(LOG_DIR):
-    os.mkdir(LOG_DIR)
-
 if ENV in ("prod", "staging"):
     MEDIA_ROOT = os.environ["MEDIA_ROOT"]
     STATIC_ROOT = os.environ["STATIC_ROOT"]
