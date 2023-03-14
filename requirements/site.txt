@@ -18,7 +18,7 @@ billiard==3.6.4.0
     # via celery
 celery==5.2.7
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   django-celery-beat
     #   django-structlog
 certifi==2022.12.7
@@ -35,34 +35,36 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.2.0
     # via celery
+cron-descriptor==1.2.35
+    # via django-celery-beat
 decorator==5.1.1
     # via ipython
 django==4.1.7
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   django-celery-beat
     #   django-extensions
     #   django-spaceless-templates
     #   django-storages
     #   django-structlog
-django-celery-beat==2.4.0
-    # via -r requirements/site.in
+django-celery-beat==2.5.0
+    # via -r site.in
 django-extensions==3.2.1
-    # via -r requirements/site.in
+    # via -r site.in
 django-ipware==4.0.2
     # via django-structlog
 django-spaceless-templates==1.0.2
-    # via -r requirements/site.in
+    # via -r site.in
 django-storages==1.13.2
-    # via -r requirements/site.in
+    # via -r site.in
 django-structlog[celery]==4.1.1
-    # via -r requirements/site.in
+    # via -r site.in
 django-timezone-field==5.0
     # via django-celery-beat
 executing==1.2.0
     # via stack-data
 ipython==8.11.0
-    # via -r requirements/site.in
+    # via -r site.in
 jedi==0.18.2
     # via ipython
 kombu==5.2.4
@@ -80,7 +82,7 @@ prompt-toolkit==3.0.38
     #   click-repl
     #   ipython
 psycopg2-binary==2.9.5
-    # via -r requirements/site.in
+    # via -r site.in
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2
@@ -88,12 +90,12 @@ pure-eval==0.2.2
 pygments==2.14.0
     # via ipython
 pymemcache==4.0.0
-    # via -r requirements/site.in
+    # via -r site.in
 python-crontab==2.7.1
     # via django-celery-beat
 python-dateutil==2.8.2
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   python-crontab
 pytz==2022.7.1
     # via
@@ -101,7 +103,7 @@ pytz==2022.7.1
     #   django-timezone-field
 sentry-sdk==1.16.0
     # via
-    #   -r requirements/site.in
+    #   -r site.in
     #   structlog-sentry
 six==1.16.0
     # via
@@ -116,7 +118,7 @@ structlog==22.3.0
     #   django-structlog
     #   structlog-sentry
 structlog-sentry==2.0.0
-    # via -r requirements/site.in
+    # via -r site.in
 traitlets==5.9.0
     # via
     #   ipython
